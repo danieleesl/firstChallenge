@@ -61,7 +61,7 @@ function validaNext2(){
     const check = document.querySelector('#checkdisable').value;
     const select = document.querySelector('#decide').value;
 
-    if ( check && select) {
+    if ( select && check) {
         document.querySelector('#next4').disabled = false;
         return
     }
