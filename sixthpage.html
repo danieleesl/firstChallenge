@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Pesquisa</title>
+</head>
+<body>
+    <script type="text/javascript" src="index.js" defer></script>
+    <form id="form">
+
+      <div class="fullname">
+        <p>Full name</p><input required type="text"  id="full" placeholder="Nasser Toghiri" class="inputs required" oninput="nameValidate()">
+        <span class="span-required">Nome deve ter mais de 3 caracteres</span>
+      </div>
+      <div class="email">
+        <p>Email</p><input required type="text"  id="email" placeholder="N.Toghiri@Gmail.com" class="inputs required" oninput="emailValidate()">
+        <span class="span-required">Digite um email valido</span>
+      </div>
+      <div class="age">
+        <p>Age</p><input required type="number"  id="age" placeholder="    --   --  " class="inputs required" oninput="ageValidate()">
+        <span class="span-required">Digite uma idade valida</span>
+      </div>
+      <div><a href="fifthpage.html" class="back6">Back</a></div>
+
+      <button id="submit" onclick="window.location.href = 'index.html'">submit</button>
+
+    </form>
+    
+</body>
+
+<div>
+  <img class="boneco6" src="imagens/boneco6.png">
+</div>  
+</html>
