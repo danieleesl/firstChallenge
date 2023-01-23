@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Pesquisa</title>
+</head>
+<body>
+    <script type="text/javascript" src="index.js" defer></script>
+    <div>
+        <img class="boneco3" src="imagens/boneco3.png">
+    </div>
+    <div class="whatis">
+        What is the status of your account?
+    </div>
+    <form>
+        <select name="account" id="account" class="select1" onchange="validaNext()">
+            <option value="" selected disable hidden>Chooche a status account</option>
+            <option value="1">I have not created an account yet</option>
+            <option value="2">Waiting for approve</option>
+            <option value="3">Active</option>
+        </select>
+    </form>
+    <div class="inwhich">
+        In which financial markets do you operate?
+    </div>
+    <section class="check">
+        <div>
+            <label for="">
+                <input type="radio" name="stock market" id="checkdisable" onchange="validaNext()">
+                stock market
+            </label>
+        </div>
+        <div>
+            <label for="">
+                <input type="radio" name="foreing" id="checkdisable" onchange="validaNext()">
+                foreign exchange
+            </label>
+        </div>
+        <div>
+            <label for="">
+                <input type="radio" name="commodity" id="checkdisable" onchange="validaNext()">
+                commodity
+            </label>
+        </div>
+        <div>
+            <label for="">
+                <input type="radio" name="bond markets" id="checkdisable" onchange="validaNext()">
+                bond markets
+            </label>
+        </div>
+        <div>
+            <label for="">
+                <input type="radio" name="cryptocurrency market" id="checkdisable" onchange="validaNext()">
+                cryptocurrency market
+            </label>
+        </div>
+        <button id="next" disabled onclick="window.location.href = 'fourthpage.html'">Next</button>
+    </section>
+    <div><a href="secondpage.html"  class="back">Back</a></div>
+    
+    <div><a href="fourthpage.html" class="skip">Skip</a></div>
+    </section>
+    
+</body>
+</html>
